@@ -1,0 +1,49 @@
+\begin{thebibliography}{7}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Freyhult et~al.(2007)Freyhult, Bollback, and Gardner]{Freyhult07}
+E.~K. Freyhult, J.~P. Bollback, and P.~P. Gardner.
+\newblock Exploring genomic dark matter: A critical assessment of the
+  performance of homology search methods on noncoding {RNA}.
+\newblock \emph{Genome Res.}, 17:\penalty0 117--125, 2007.
+
+\bibitem[Nawrocki and Eddy(2013{\natexlab{a}})]{Nawrocki13b}
+E.~P. Nawrocki and S.~R. Eddy.
+\newblock Computational identification of functional {RNA} homologs in
+  metagenomic data.
+\newblock \emph{RNA Biol.}, 10:\penalty0 1170--1179, 2013{\natexlab{a}}.
+
+\bibitem[Pearson(1996)]{Pearson96}
+W.~R. Pearson.
+\newblock Effective protein sequence comparison.
+\newblock \emph{Methods Enzymol}, 266:\penalty0 227--258, 1996.
+
+\bibitem[Nawrocki(2014)]{Nawrocki13}
+E.~P. Nawrocki.
+\newblock Annotating functional {RNA}s in genomes using {I}nfernal.
+\newblock In J.~Gorodkin and W.~L. Ruzzo, editors, \emph{{RNA} {S}equence,
+  {S}tructure, and {F}unction: {C}omputational and {B}ioinformatic methods},
+  pages 163--197. Springer Humana Press, 2014.
+
+\bibitem[Wheeler and Eddy(2013)]{Wheeler13b}
+T.~J. Wheeler and S.~R. Eddy.
+\newblock {nhmmer}: {DNA} homology search with profile {HMMs}.
+\newblock \emph{Bioinformatics}, 29:\penalty0 2487--2489, 2013.
+
+\bibitem[Nawrocki and Eddy(2013{\natexlab{b}})]{Nawrocki13c}
+E.~P. Nawrocki and S.~R. Eddy.
+\newblock Infernal 1.1: 100-fold faster {RNA} homology searches.
+\newblock \emph{Bioinformatics}, 29:\penalty0 2933--2935, 2013{\natexlab{b}}.
+
+\bibitem[Nawrocki et~al.(2015)Nawrocki, Burge, Bateman, Daub, Eberhardt, Eddy,
+  Floden, Gardner, Jones, Tate, and Finn]{Nawrocki15}
+E.~P. Nawrocki, S.~W. Burge, A.~Bateman, J.~Daub, R.~Y. Eberhardt, S.~R. Eddy,
+  E.~W. Floden, P.~P. Gardner, T.~A. Jones, J.~Tate, and R.~D. Finn.
+\newblock Rfam 12.0: updates to the {RNA} families database.
+\newblock \emph{Nucleic Acids Res.}, 43:\penalty0 D130--D137, 2015.
+
+\end{thebibliography}
