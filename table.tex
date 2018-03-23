@@ -2,24 +2,25 @@
 %    omitted. Current as of March 22, 2018.}}
 
 \begin{center}
-\begin{tabular}{r|l|r|l|l|l|l|r|r|r|l}
-       &                    &              &                &                &          &        &       & \#mature & \#RNAs     & Rfam \\ 
-  rank & species            &       \#seqs & RefSeq accn    & family         & type     & host   & \#cds & peptides & (Rfam hits)& types \\ \hline
-       & Influenza          & 1,009,341    & NC\_007370     & Orthomyxoviridae & (-)ssRNA & humans+&   11 &       - & 1 & Cis-reg \\ 
-     1 & Rotavirus A        &58405\footnote{sum of 11 segments}& NC\_011503&Reoviridae&dsRNA&humans&   12 &       - & 1 & Cis-reg  \\ %cis-acting replication element (CRE)
-     2 & Hepatitis B        &         9211 & NC\_011503      & Hepadnaviridae & dsDNA-RT & humans &     7 &       - & 1 & Cis-reg \\ %RNA encapsidation signal epsilon
-     3 & Dengue             &         4853 & NC\_001477      & Flaviviridae   & (+)ssRNA & humans &     1 &      14 & 5 & Cis-reg  \\ 
-     4 & HIV-1              &        2597  & NC\_001802      & Retroviridae   & ssRNA-RT & humans &    10 &      14 & 10 & Cis-reg(8), miRNA(1), FSE(1) \\
-     5 & Hepatitis C        &        2185  & NC\_004102      & Flaviviridae   & (+)ssRNA & humans &     2 &      10 & 6  & Cis-reg(5), IRES(1) \\
-     6 & Porcine circovirus &        1905  & NC\_005148      & Circoviridae   & ssDNA    & pigs   &     3 &       - & 0  & - \\
-     7 & West Nile          &        1667  & NC\_009942      & Flaviviridae   & (+)ssRNA & humans &     3 &      16 & 6  & Cis-reg(5), FSE(1) \\
-     8 & Ebola              &        1384  & NC\_002549      & Flaviviridae   & (+)ssRNA & humans &     9 &       - & 0  & - \\ 
-     9 & Enterovirus A      &        1222  & NC\_001612      & Picarnoviridae & (+)ssRNA & humans &     1 &      11 & 3  & Cis-reg(2), IRES(1) \\
-    10 & RSV                &        1122  & NC\_001781      &Orthopneumovirus& (-)ssRNA & humans &    11 &       - & 0  & - \\
-    11 & Norwalk virus      &        1009  & NC\_029646      & Calciviridae   & (+)ssRNA & humans &     3 &       6 & 1  & Cis-reg \\ 
-    12 & Maize streak virus &         884  & NC\_001346      & Geminiviridae  & ssDNA    & plants &     4 &       - & 0  & -  \\
-    13 & Rabies lyssavirus  &         826  & NC\_001542      & Rhabdoviridae  & (-)ssRNA & humans+&     5 &       - & 0  & -  \\
-    14 & Enterovirus C (Polio) &      765  & NC\_002058      & Picarnoviridae & (+)ssRNA & humans &     1 &      13 & 3  & Cis-reg(2), IRES(1) \\
-    15 & HPV 16             &         764  & NC\_001526      &Papillomaviridae& dsDNA    & humans &     9 &       - & 0  & - \\
+\begin{tabular}{r|l|r|l|l|l|l|r|r|r|r|l}
+       &                    &              &                &                &          &        & \multicolumn{3}{c}{annotated} & & \\
+       &                    &              &                &                &          &        &       & \#mature & \# of    & \multicolumn{2}{c}{Rfam} \\ 
+  rank & species            &       \#seqs & RefSeq accn    & family         & type     & host   & \#cds & peptides & 'RNA's   & \#RNAs & types \\ \hline
+       & Influenza          & 1,009,341    & NC\_007370     & Orthomyxoviridae & (-)ssRNA & humans+&   11 &       - &        - & 1 & Cis-reg \\ 
+     1 & Rotavirus A        &58405\footnote{sum of 11 segments}& NC\_011503&Reoviridae&dsRNA&humans&   12 &       - &        - & 1 & Cis-reg  \\ %cis-acting replication element (CRE)
+     2 & Hepatitis B        &         9211 & NC\_011503      & Hepadnaviridae & dsDNA-RT & humans &     7 &       - &        - & 1 & Cis-reg \\ %RNA encapsidation signal epsilon
+     3 & Dengue             &         4853 & NC\_001477      & Flaviviridae   & (+)ssRNA & humans &     1 &      14 &        - & 5 & Cis-reg  \\ 
+     4 & HIV-1              &        2597  & NC\_001802      & Retroviridae   & ssRNA-RT & humans &    10 &      14 &        - & 10 & Cis-reg(8), miRNA(1), FSE(1) \\
+     5 & Hepatitis C        &        2185  & NC\_004102      & Flaviviridae   & (+)ssRNA & humans &     2 &      10 &        - & 6  & Cis-reg(5), IRES(1) \\
+     6 & Porcine circovirus &        1905  & NC\_005148      & Circoviridae   & ssDNA    & pigs   &     3 &       - &        - & -  & - \\
+     7 & West Nile          &        1667  & NC\_009942      & Flaviviridae   & (+)ssRNA & humans &     3 &      16 &        - & 6  & Cis-reg(5), FSE(1) \\
+     8 & Ebola              &        1384  & NC\_002549      & Flaviviridae   & (+)ssRNA & humans &     9 &       - &        - & -  & - \\ 
+     9 & Enterovirus A      &        1222  & NC\_001612      & Picarnoviridae & (+)ssRNA & humans &     1 &      11 &        - & 3  & Cis-reg(2), IRES(1) \\
+    10 & RSV                &        1122  & NC\_001781      &Orthopneumovirus& (-)ssRNA & humans &    11 &       - &        - & -  & - \\
+    11 & Norwalk virus      &        1009  & NC\_029646      & Calciviridae   & (+)ssRNA & humans &     3 &       6 &        - & 1  & Cis-reg \\ 
+    12 & Maize streak virus &         884  & NC\_001346      & Geminiviridae  & ssDNA    & plants &     4 &       - &        1 & -  & -  \\
+    13 & Rabies lyssavirus  &         826  & NC\_001542      & Rhabdoviridae  & (-)ssRNA & humans+&     5 &       - &        - & -  & -  \\
+    14 & Enterovirus C (Polio) &      765  & NC\_002058      & Picarnoviridae & (+)ssRNA & humans &     1 &      13 &       13 & 3  & Cis-reg(2), IRES(1) \\
+    15 & HPV 16             &         764  & NC\_001526      &Papillomaviridae& dsDNA    & humans &     9 &       - &        - & -  & - \\
 \end{tabular}
 \end{center}
