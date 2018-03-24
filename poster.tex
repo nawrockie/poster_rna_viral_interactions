@@ -65,74 +65,38 @@ three-dimensional structures that are crucial to their functions in
 various fundamental cellular processes including protein synthesis,
 gene expression, splicing, protein transport, and more. 
 
-Finding homologs of structural RNAs is challenging because the
-sequences are often short (100-200 nt), lack ORFs, and have regions of
-high sequence variability even while conserving their
-three-dimensional structure. The most successful approaches for RNA
-homology search take advantage of both sequence and secondary
-structure conservation \cite{Freyhult07}.  The example below from \cite{Nawrocki13b}
-shows how searching for both sequence and secondary structure using a
-covariance model (CM) can identify a Cobalamin riboswitch which BLAST,
-a sequence-only based method, fails to identify.
+Functional RNAs, with the exception of transfer RNAs and ribosomal
+RNAs are rarely annotated in sequences in databases like GenBank and
+RefSeq, at least partly because finding homologs of structural RNAs is
+challenging: the sequences are often short (100-200 nt), lack ORFs,
+and have regions of high sequence variability even while conserving
+their three-dimensional structure.
+The Infernal software package is one of the most successful approaches for RNA
+homology search because it takes advantage of both sequence and secondary
+structure conservation \cite{Freyhult07}. Infernal is the software
+behind the Rfam database \cite{Kalvari17} which contains information
+for more than 2500 RNA families.
 
 \section*{The most prevalent viral genomes in GenBank lack possible
   RNA annotation from Rfam}
 
 \small
 \input{table.tex}
+\normalsize
 
-When searching for protein coding genes, the amino acid sequence
-should be used instead of the nucleotide sequence because the larger
-amino acid alphabet makes protein searches much more powerful
-\cite{Pearson96}.  Incorporating secondary structure into RNA searches
-offers a similar boost to the statistical power of a nucleotide-only
-based search for RNAs, albeit not as dramatic. Figure
-\ref{fig:examples} below compares the increase in statistical
-significance between BLASTN (nucleotide-based search) and BLASTP
-(protein-based search) for protein-coding genes and between BLASTN
-and Infernal (CM-based sequence and structure search) for RNA genes,
-where both the protein-coding gene and RNA gene being searched for are
-members of the same ribonucleoprotein complex.
+\section*{Rfam: the RNA families database \cite{Nawrocki15}}
 
-% the caption for figure 1 (cobalamin) was in the figure.
-\setcounter{figure}{1}
-
-\begin{footnotesize}
-\begin{figure}
-\center{\includegraphics[width=13.5in]{figs/revised-examples}}
-\caption{
-Homology search improvement achieved by utilizing additional
-information for proteins and structured noncoding RNAs. This figure is
-from \cite{Nawrocki13b}.}
-%Examples of identifying coding region homologies by amino acid sequence
-%vs. nucleic acid sequence comparison (BLASTP vs. BLASTN, dashed
-%lines), compared with identifying RNA homologies by primary sequence
-%vs. structure/sequence comparison (BLASTN vs. infernal, solid lines)
-%for several ribonucleoprotein complexes.}
-%Filled circles correspond
-%to BLASTP protein searches and Infernal RNA searches. Open circles
-%correspond to BLASTN coding region searches and BLASTN RNA
-%searches.}
-%Question marks indicate targets that were not found by the
-%indicated search method. Each point is labeled with its e-) and
-%fractional ), calculated as the fraction of query positions included
-%in the hit alignment. For each query/target
-%pair, the query sequence was searched against the target genome (for
-%coding sequence and rNA searches) or predicted proteome (for amino
-%acid sequence searches) using the indicated search programs. For
-%example, in the leftmost column, when we use the SrP protein  h in
-%E. coli as a query against the B. subtilis proteome with BLASTP, the
-%top scoring hit is to the  h protein with an e-value of 6 Covcoverage 10 (evalue (
-\label{fig:examples}
-\end{figure}
-\end{footnotesize}
+\begin{center}
+\includegraphics[width=21.5in]{figs/rfam-poster}
+\end{center}
 
 \columnbreak
 %%%%%%%%%%%%%%%%%
 % Middle column %
 %%%%%%%%%%%%%%%%%
 
-\section*{Conserved sequence and structure as statistical signals}
+\section*{Conserved sequence and 
+structure as statistical signals}
 The conserved sequence and secondary structure of RNAs offers two
 statistical signals that can be harnessed when searching
 databases for homologs using CMs. In
