@@ -25,7 +25,7 @@
 \usepackage{overpic}
 \renewcommand{\mastercapstartstyle}[1]{\textit{\textbf{#1}}}
 
-\title{Identifying Conserved RNA Structural Elements in Viruses using Rfam and Infernal}
+\title{Identifying Conserved RNA Structures in Viruses using Rfam and Infernal}
 \author{Eric P. Nawrocki(1), Ioanna Kalvari(2), Joanna Argasinska(2),
   Anton I. Petrov(2) and Sean R. Eddy(3)}
 %\author{Eric Nawrocki}
@@ -77,17 +77,18 @@ structure conservation \cite{Freyhult07}. Infernal is the software
 behind the Rfam database \cite{Kalvari17} which contains information
 for more than 2500 RNA families.
 
-\section*{The most prevalent viral genomes in GenBank lack possible
-  RNA annotation from Rfam}
+%\section*{The most prevalent viral genomes in GenBank lack possible
+%  RNA annotation from Rfam}
+\section*{The most prevalent viral genomes in GenBank}
 
-\small
+\footnotesize
 \input{table.tex}
 \normalsize
 
 \section*{Rfam: the RNA families database \cite{Kalvari17}}
 
 \begin{center}
-\includegraphics[width=21.5in]{figs/rfam-poster}
+\includegraphics[width=13.5in]{figs/rfam-poster}
 \end{center}
 
 \columnbreak
@@ -118,8 +119,8 @@ random nucleotides.
 %The eight sequence alignment for a fabricated RNA
 %  family used to build both of the profiles is on the left. 
 %  The {\tt struct} line denotes the consensus secondary structure of the
-%  family, with basepaired columns indicated by matching nested {\tt <}
-%  and {\tt >} characters and connected by lines at top of figure. 
+%  family, with basepaired columns indicated by matching nested {\tt <}%
+  and {\tt >} characters and connected by lines at top of figure. 
 % The
 %  structure is ignored by the sequence-only profile but used in the
 %  sequence and structure profile to define dependencies between
@@ -196,7 +197,7 @@ of magnitude ($2^{10} = 1024$).
 
 \begin{footnotesize}
 \begin{figure}
-\center{\includegraphics[width=15in]{figs/rmark-tree-roc-poster}}
+\center{\includegraphics[width=13in]{figs/rmark-tree-roc-poster}}
 \caption{
 RMARK benchmark. Top: schematic for benchmark
 construction. Bottom: Results of benchmark. Plots are shown for the new
@@ -212,22 +213,27 @@ is from \cite{Nawrocki13c}}
 
 \vspace{0.5in}
 
-\section*{Iterative search is a powerful way to expand knowledge of an
+\section*{Iterative search to expand knowledge of an
   RNA family}
 
+%\begin{footnotesize}
+%\begin{figure}
 \begin{center}
-\includegraphics[width=26.125in]{figs/iterative-purine-poster}
+\includegraphics[width=13in]{figs/iterative-purine-poster-fat}
 \end{center}
+%\caption{
+%Example of iterative searches for the Purine riboswitch (RF00167) in bacterial genomes.}
+%\label{fig:iterative}
+%\end{figure}
+%\end{footnotesize}
 
 \section*{Funding}
-\begin{footnotesize}
+\begin{tiny}
 This work is supported by the Intramural Research Program of the
-National Institutes of Health, National Library of Medicine (EPN), 
-by Howard Hughes Medical Institute (EPN (previously), SRE), by the European
-Bioinformatics institute of the European Molecular Biology Laboratory
-(IK, JA, AIP), and by the Biotechnology and Biological Sciences
+NIH, National Library of Medicine (EPN), by Howard Hughes Medical Institute (EPN (previously), SRE), by the European
+Bioinformatics Institute (IK, JA, AIP), and by the Biotechnology and Biological Sciences
 Research Council (IK, JA, AIP).
-\end{footnotesize}
+\end{tiny}
 
 \bibliographystyle{unsrtnat}
 \begin{tiny}
